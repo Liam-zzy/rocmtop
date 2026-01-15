@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rocmtop"
+version = "0.1.0"
+description = "A lightweight ROCm GPU monitoring tool (like nvidia-smi top)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+dependencies = [
+    "rich",
+    "readchar",
+]
+
+[project.scripts]
+rocmtop = "rocmtop.cli:main"
