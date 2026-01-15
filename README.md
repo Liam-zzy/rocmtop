@@ -1,4 +1,3 @@
-```markdown
 # rocmtop
 
 **rocmtop** 是一个轻量级的 ROCm GPU 监控工具，可在终端实时展示 AMD 显卡状态（温度、功耗、利用率、显存占用），功能类似 `nvidia-smi top`，专为 ROCm 平台优化。
@@ -13,8 +12,8 @@ pip install -e .
 rocmtop
 ```
 
-```bash
 # 或从 PyPI 安装正式版
+```bash
 pip install rocmtop
 rocmtop
 ```
@@ -42,7 +41,6 @@ rocmtop
 
 ```bash
 rocmtop                 # 默认 0.5 s 刷新
-rocmtop -i 1.0          # 自定义 1 秒刷新
 ```
 
 ## 作者
