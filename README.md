@@ -47,4 +47,3 @@ rocmtop                 # 默认 0.5 s 刷新
 
 Ziyang Zhai (Liam)  
 项目地址: [https://github.com/Liam-zzy/rocmtop](https://github.com/Liam-zzy/rocmtop)
-```
