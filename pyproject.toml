@@ -4,16 +4,38 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rocmtop"
-version = "0.1.0"
-description = "A lightweight ROCm GPU monitoring tool (like nvidia-smi top)"
+version = "0.2.0"
+description = "A lightweight nvitop-like ROCm GPU monitor for AMD GPUs"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
+authors = [
+    { name = "Ziyang Zhai", email = "zzhai@amd.com" },
+]
+keywords = ["amd", "gpu", "rocm", "monitoring", "terminal", "cli"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Monitoring",
+]
 
 dependencies = [
     "rich",
     "readchar",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Liam-zzy/rocmtop"
+Repository = "https://github.com/Liam-zzy/rocmtop"
+Issues = "https://github.com/Liam-zzy/rocmtop/issues"
 
 [project.scripts]
 rocmtop = "rocmtop.cli:main"
